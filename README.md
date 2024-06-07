@@ -1,7 +1,7 @@
 # Demonstrates the Problem External Libaries and Traits
 
-Groovy Traits should not use imports from External Libaries
-Doing so reduces the possibility of future compatability
+Groovy Traits should not use imports from External Libaries.
+Doing so reduces the possibility of future compatability.
 
 The following situation could have been prevented if `def` was used instead of `ServletContext`
 Doing so would have ensured either library could have been used in the future.
@@ -15,7 +15,7 @@ trait UserTrait {
         return "Hello from Jakarta"
     }
 
-    def getServletContext() { null }
+    def getServletContext() { servletContext }
 }
 ```
 
@@ -28,6 +28,6 @@ trait UserTrait {
         return "Hello from Jakarta"
     }
 
-    jakarta.servlet.ServletContext getServletContext() { null }
+    jakarta.servlet.ServletContext getServletContext() { servletContext }
 }
 ```
