@@ -3,7 +3,7 @@
 Groovy Traits should not use imports from External Libaries.
 Doing so reduces the possibility of future compatability.
 
-The following situation could have been prevented if `def` was used instead of `ServletContext`
+The following situation could have been prevented if `def` was used instead of `ServletContext`.
 Doing so would have ensured either library could have been used in the future.
 
 ## Preferred
